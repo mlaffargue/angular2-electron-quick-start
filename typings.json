@@ -1,0 +1,7 @@
+{
+    "name": "angular2-electron-quick-start",
+    "dependencies": {},
+    "globalDependencies": {
+        "electron": "registry:dt/electron#1.4.8+20170104211658"
+    }
+}

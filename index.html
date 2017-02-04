@@ -9,11 +9,12 @@
 
     <script src="systemjs.config.js"></script>
     <script>
+    System.set('electron', System.newModule(require('electron')));
       System.import('app').catch(function(err){ console.error(err); });
     </script>
   </head>
   <body>
-    <h1>Hello Electron !</h1>
+    <h1>Electron !</h1>
     <!-- All of the Node.js APIs are available in this renderer process. -->
     We are using Node.js <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
@@ -23,7 +24,12 @@
   </body>
 
   <script>
+    window.nodeRequire = require;
+    delete window.require;
+    delete window.exports;
+    delete window.module;
+
     // You can also require other files to run in this process
-    require('./renderer.js')
+    nodeRequire('./renderer.js')
   </script>
 </html>
