@@ -1,6 +1,9 @@
 # angular2-electron-quick-start
 A minimal Electron/Angular2 application
 
+## Depends on
+Typings, Typescript and Electron
+npm i -g typings electron typescript
 
 ## To Use
 
