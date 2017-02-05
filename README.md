@@ -3,7 +3,10 @@ A minimal Electron/Angular2 application
 
 ## Depends on
 Typings, Typescript and Electron
+
+```bash
 npm i -g typings electron typescript
+```
 
 ## To Use
 
